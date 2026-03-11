@@ -103,6 +103,9 @@ If they haven't been updated, update them now. Do NOT tell me to /compact until 
 - When the review is complete, STOP — do NOT proceed to the next phase or any other work
 - Do NOT read or parse conversation log files, JSONL files, or any internal Claude data files
 
-After completing the review, remind me to run /compact, then /execute-plan {next_phase_number} {feature_name} when ready (where next_phase_number = phase_number + 1). If this was the last phase, tell me to run /final-review {feature_name} instead.
+After completing the review, remind me to run /compact, then either:
+- /execute-plan {next_phase_number} {feature_name} to continue to the next phase (where next_phase_number = phase_number + 1)
+- /checkpoint {phase_number} {feature_name} to manually verify everything built so far works in the real app
+If this was the last phase, tell me to run /final-review {feature_name} instead.
 
 ## REMINDER: Your job is DONE after reviewing Phase {phase_number}. Do NOT start the next phase. Do NOT implement anything. STOP here.

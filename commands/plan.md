@@ -45,7 +45,12 @@ You will produce two things:
    - Edge case tests — boundary conditions and unusual inputs behave correctly
    - Integration tests with prior phases — new code works with previously built code
    - Exact pass/fail conditions — specific enough to write test cases from, not vague like "verify it works"
-8. **Estimated complexity** — Small / Medium / Large
+8. **Manual verification steps** — What the user should see or be able to do after this phase is implemented. Be specific:
+   - For frontend changes: exact URLs to visit, what should appear on screen, interactions to try, visual changes to look for
+   - For backend changes: API endpoints to call (with example curl commands or request bodies), expected responses, database state to check
+   - For both: step-by-step instructions a non-technical person could follow to verify the phase works in the real app
+   - If this phase has no user-visible changes (e.g. pure refactoring or data model only), explicitly state "No user-visible changes in this phase"
+9. **Estimated complexity** — Small / Medium / Large
 
 The goal is that during execution, an engineer only needs to read phase_N.md and the codebase — nothing else.
 

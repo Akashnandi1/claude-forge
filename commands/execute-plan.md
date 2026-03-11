@@ -44,8 +44,13 @@ If your findings during implementation require changes to planning documents:
 
 1. Summarize what was implemented — files created/modified, key decisions made during implementation
 2. Walk through how each testing criterion for this phase is satisfied
-3. Wait for my approval
-4. If any documents need updates based on implementation findings, apply them too after approval
+3. **Tell me exactly what I can verify manually right now.** Based on the phase file's "Manual verification steps" section:
+   - For frontend changes: tell me the exact URL to open, what I should see, and what to click/interact with
+   - For backend changes: give me exact curl commands or API calls to test, and what the response should look like
+   - If there are no user-visible changes, say so explicitly
+   - If something requires a server restart, build step, or database migration, tell me the exact commands to run first
+4. Wait for my approval
+5. If any documents need updates based on implementation findings, apply them too after approval
 
 ## MANDATORY — Mark completion (do this BEFORE telling me to /compact)
 

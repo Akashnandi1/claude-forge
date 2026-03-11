@@ -49,6 +49,13 @@ Critically review plan.md and each phase file against design.md and requirement.
 - An engineer could implement the phase by reading ONLY this file and the codebase — nothing else
 - No critical details are missing that would force the engineer to open design.md or requirement.md
 
+### Manual verification check — for each phase file verify:
+- Manual verification steps are present and specific
+- Frontend changes include exact URLs, expected visuals, and interactions to try
+- Backend changes include exact API calls or curl commands with expected responses
+- If a phase has no user-visible changes, it explicitly says so
+- Steps are specific enough that the user can verify the phase works by looking at the real app — not just trusting tests
+
 ### Ordering check:
 - Does the order make sense? Foundation before layers that depend on it?
 - Are there phases that could be reordered to reduce risk or rework?
