@@ -35,7 +35,7 @@ Use `/clear` (full reset) when:
 - Starting a new day on the same task — read the relevant phase file to resume
 
 ### Proactive context hygiene
-- Run `/context` periodically to check usage
+- Run `/status` periodically to check usage
 - If above 60%, compact at the next phase boundary — don't wait for auto-compact
 - Disable unused MCP servers before they eat context
 
