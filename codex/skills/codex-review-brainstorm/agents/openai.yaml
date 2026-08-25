@@ -1,0 +1,5 @@
+interface:
+  display_name: "Codex Review Brainstorm"
+  short_description: "Explicit adversarial review gate; read-only and no remediation."
+policy:
+  allow_implicit_invocation: false
